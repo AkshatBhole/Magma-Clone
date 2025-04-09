@@ -1,0 +1,602 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+#main{
+    position: relative;
+    background-color: #0a3cce;
+}
+
+
+/* [data-scroll-container] {
+    overflow: hidden;
+} */
+
+@font-face {
+    font-family: a;
+    src: url(./jost.variable.ttf);
+}
+
+#page1{
+    height: 100vh;
+    width: 100vw;
+
+}
+#page1 {
+    position: relative;
+}
+
+#page1>video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1; /* Ensures the video stays behind */
+}
+
+#page1>nav {
+    position: absolute; /* Makes the navbar float over the video */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: transparent; /* Ensure it's transparent */
+    z-index: 10; /* Ensures it stays above the video */
+}
+
+
+
+#page1>nav>img{
+    width: 10;
+    margin: -70px;
+}
+
+button{
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: #0b48ed ;
+    border:1px solid white;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    padding: 1vw
+}
+
+#bottom-page1 {
+    /* background-color: red; */
+    height: 100;
+    width: 40%;
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    z-index: 10; /* Ensure it appears above the video */
+    color: white; /* Make text visible if the background is dark */
+}
+
+#bottom-page1>h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 140px;
+    line-height: 1;
+}
+#bottom-page1-inner{
+    height: 30%;
+    width: 100%;
+    /* background-color: pink; */
+    position: absolute;
+    z-index: 10;
+    bottom: s;
+
+}
+
+#bottom-page1-inner>h4{
+    
+    font-size: 50px;
+    margin-top: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    line-height: 1;
+    letter-spacing: 1px;
+    word-spacing:2px ;
+}
+#bottom-page1-inner>button{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 10px 2vw;
+}
+
+#page2{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: start ;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: aquamarine;
+    position:relative;
+    padding: 1px 12vw;
+    color: white;
+    background-color: #0a3cce;
+}
+#page2>h2{
+    font-weight: 100;
+    margin-left: 8.8px;
+    font-size: 1.8vw;
+    margin-left: 1.2vw;
+    line-height: 4;
+}
+#page2>h1{
+    font-weight: 100;
+    width: 100%;
+    font-size: 4vw;
+    line-height: 1.2;
+    color: rgb(138, 138, 138);
+}
+#page3{
+    background-color: #4f5c83;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#page4{
+    display: flex;
+    align-items: start;/*start me aa ajyege donio tags*/
+    justify-content: center;
+    flex-direction: column;/*amne samne nahi aane chahaiye h2 and*/
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1137ca;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page4>h2{
+    font-size: 1.8vw;
+    margin-left: 10.7vw;
+    margin-bottom: 2%;
+    font-weight: 100;
+    color: white;
+
+
+} 
+#page4>h1{
+    margin-left: 10vw;
+    margin-bottom: 2vw;
+    width: 70%;
+    font-size: 3vw;
+    line-height: 1.3;
+    font-weight: 100;
+    color: rgb(138, 138, 138);
+
+} 
+
+#page5{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1137ca;
+}
+
+#page5>canvas{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page6{
+    display: flex;
+    align-items: start;/*start me aa ajyege donio tags*/
+    justify-content: center;
+    flex-direction: column;/*amne samne nahi aane chahaiye h2 and*/
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1137ca;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+
+}
+
+#page6>h2{
+    font-size: 1.7vw;
+    margin-left: 10.8vw;
+    margin-bottom: 2%;
+    font-weight: 100;
+    color: white;
+
+}
+#page6>h1{
+    
+    margin-left: 10vw;
+    margin-bottom: 2vw;
+    width: 70%;
+    font-size: 3vw;
+    line-height: 1.3;
+    font-weight: 100;
+    color: rgb(138, 138, 138);
+
+
+}
+#page7{
+    display: flex;
+    align-items: start;/*start me aa ajyege donio tags*/
+    justify-content: center;
+    flex-direction: column;/*amne samne nahi aane chahaiye h2 and*/
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1137ca;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: visible; 
+}
+
+#page7>canvas{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+}
+#page7-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    border: 1px solid white; /* Missing semicolon added here */
+}
+#page7-circle-inner {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    border: 1px solid white; /* Missing semicolon added here */
+}
+
+#page8{
+    position:relative;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+#page8>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page8-bottom{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-bottom: 7vw;
+    
+
+
+}
+
+#page8-bottom>h1{
+    margin-bottom: 2vw;
+    font-size: 5vw;
+    font-weight: 100;
+}
+#page8-bottom>button{
+    background-color: white;
+    color: #0a3cce;
+}
+
+
+#page9{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0a3cce;
+}
+#left9{
+    height: 100%;
+    width: 40%;
+    position: relative;
+    font-family: a;
+}
+#left9>h1{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 5vw;
+    font-weight: 100;
+    color: #fff;
+    line-height: 1;
+}
+#right9{
+    height: 100%;
+    width: 60%;
+    position: relative;
+}
+
+#right9-center{
+    height: 50%;
+    width: 85%;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(magma.wp2.cubdev.com-home-1.jpeg);
+    background-size: cover;
+    left: 5%;
+}
+
+#page10{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    line-height: 1.4;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0a3cce;
+}
+.right10{
+    margin-top: 60px;
+    height: 100%;
+    width: 60%;
+    position: relative;
+    left: 40%;
+}
+.right10-inner{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    height: 33.3%;
+    width: 100%;
+    font-family: a;
+    color: #fff;
+}
+.right10-inner>h1{
+    font-size: 2vw;
+    color: white;
+}
+.right10-inner>p{
+    margin-top: 2vw;
+    font-size: 1.3vw;
+    width: 80%;
+    color: #ffffffb1;
+}
+h1,p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 90;
+}
+.right10-inner{
+    margin-bottom: px;
+    
+}
+
+/* Main container */
+#page11 {
+    color: black;
+    height: auto; /* Adjusts to content height */
+    width: 100vw;
+    position: relative;
+    background-color: white;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding-bottom: 5vw;
+}
+
+/* Heading */
+#page11 > h1 {
+    font-weight: 100;
+    font-size: 4vw;
+    margin-bottom: 2vw;
+    padding-top: 7vw;
+    padding-left: 10vw;
+    color: black;
+}
+
+/* Blog post container */
+.page11-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw; /* Adjust width */
+    margin: 3vw auto;
+    padding: 2vw;
+    /* background-color: #00bcd4; Aqua */
+    border-radius: 15px;
+    gap: 2vw;
+}
+
+/* Left section - Image */
+.left11 {
+    width: 40%;
+}
+
+.left11 img {
+    width: 100%;
+    height: 100%; /* Ensures all images have equal height */
+    object-fit: cover; /* Crops excess parts instead of stretching */
+    border-radius: 10px;
+}
+
+
+/* Right section - Blog content */
+.right11 {
+    width: 50%;
+    /* background-color: maroon; */
+    color: white;
+    padding: 2vw;
+    border-radius: 10px;
+}
+
+/* Blog date & category */
+.right11 h2 {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: black;
+}
+
+/* Blog title */
+.right11 h3 {
+    font-size: 1.2vw;
+    font-weight: 100;
+    margin-top: 10px;
+    color: black;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .page11-inner {
+        flex-direction: column;
+        width: 90vw;
+        padding: 3vw;
+    }
+
+    .left11,
+    .right11 {
+        width: 100%;
+    }
+
+    .right11 {
+        padding: 4vw;
+    }
+
+    .right11 h2 {
+        font-size: 3vw;
+    }
+
+    .right11 h3 {
+        font-size: 2.5vw;
+    }
+}
+
+
+
+
+
+#page12{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #083acf8a;
+    color: white;
+
+    line-height: 2vw;
+}
+
+#page12-inner{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}
+#page12-inner>h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6vw;
+    margin-bottom: 30px;
+    line-height: 2;
+    letter-spacing: 2px;
+    
+}
+
+#page12-inner>h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+    font-weight: 100;
+    padding: 30px 0px;
+
+}
+
+#page13{
+    background-color:black;
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    padding: 9vw;
+    color: white;
+}
+#page13>h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    font-weight: 100;
+}
+#page13>button{
+    margin-top: 3vw;
+    padding: 1.2vw 2.2vw;
+    border: none;
+}
+
+#page14{
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    background-color: #000;
+}
+.page14-inner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 5vw;
+    font-family: a;
+    height: 33.3%;
+    width: 100%;
+    color: #fff;
+    border-top: .5px solid #ffffff5c;
+    border-bottom: .5px solid #ffffff48;
+}
+.page14-inner>i{
+    font-weight: 100;
+    font-size: 2.4vw;
+    position: relative;
+    z-index: 9999;
+}
+.page14-inner>h1{
+    font-size: 3vw;
+    font-weight: 100;
+    position: relative;
+    z-index: 9999;
+}
+
+.center14{
+    height: 0%;
+    width: 100%;
+    background-color: #0a3cce;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: all ease .5s;
+}
+
+
+.page14-inner:hover .center14{
+    height: 100%;
+}
